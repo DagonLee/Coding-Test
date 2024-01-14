@@ -8,42 +8,38 @@ public class boj8979 {
         StringTokenizer st = new StringTokenizer(br.readLine());
         int n = Integer.parseInt(st.nextToken());
         int k = Integer.parseInt(st.nextToken()) - 1;
-        int[][] medals = new int[n - 1][3];
-        int[] stand = new int[3];
-        int index = 0;
+        int[][] medals = new int[n][4];
         for(int i = 0; i < n; i++){
             st = new StringTokenizer(br.readLine());
             int idx = Integer.parseInt(st.nextToken()) - 1;
             int gold = Integer.parseInt(st.nextToken());
             int silver = Integer.parseInt(st.nextToken());
             int bronze = Integer.parseInt(st.nextToken());
-            if(idx == k){
-                stand[0] = gold;
-                stand[1] = silver;
-                stand[2] = bronze;
-                continue;
-            }
-            medals[index][0] = gold;
-            medals[index][1] = silver;
-            medals[index][2] = bronze;
-            index++;
+        
+            medals[idx][0] = idx;
+            medals[idx][1] = gold;
+            medals[idx][2] = silver;
+            medals[idx][3] = bronze;
         }
-        int ans = 0;
-        for(int i = 0; i < n - 1; i++){
-            if(medals[i][0] > stand[0]){
-                ans++;
+        Arrays.sort(medals, (o1, o2) ->{
+            if(o1[1] == o2[1]){
+                if(o1[2] == o2[2]){
+                    return o2[3] - o1[3];
+                }
+                return o2[2] - o1[2];
             }
-            else if(medals[i][0] == stand[0]){
-                if(medals[i][1] > stand[1]){
-                    ans++;
+            return o2[1] - o1[1];
+        });
+       
+        for(int i = 0; i < n; i++){
+            if(medals[i][0] == k){
+                int dest = i;
+                while(dest >= 1 && medals[dest - 1][1] == medals[dest][1] && medals[dest - 1][2] == medals[dest][2] && medals[dest - 1][3] == medals[dest][3]){
+                    dest --;
                 }
-                else if(medals[i][1] == stand[1]){
-                    if(medals[i][2] > stand[2]){
-                        ans++;
-                    }
-                }
+                System.out.println(dest + 1);
+                break;
             }
         }
-        System.out.println(ans + 1);
     }
 }
