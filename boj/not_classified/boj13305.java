@@ -11,7 +11,7 @@ public class boj13305 {
         // 1st try : 17:47 => score:58
         // 2nd try :  score :58 
         // 3 ~ 7th try : tried with BigInteger , score:17
-        // 8th try : changed to Long => success: 100
+        // 8th try : 18:20, changed to Long => success: 100
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         // 앞에서 부터 비교
         // 현재 주유 비용과 과거의 최소 주유 비용을 비교
