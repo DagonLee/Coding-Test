@@ -11,6 +11,7 @@ public class boj1515 {
     // pos 로 주어진 문자열의 수를 특정
     // num에 pos 위치에 있는 수가 있다면 num + 1
     // 주어진 문자열을 모두 커버 한다면 num 반환
+    // end : 17:00
     
     public static void main(String[] args) throws Exception{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
