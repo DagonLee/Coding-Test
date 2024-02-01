@@ -1,7 +1,6 @@
-package boj.not_classified;
+package boj.Implementation;
 
 import java.io.*;
-import java.util.*;
 
 public class boj2607 {
     /**
