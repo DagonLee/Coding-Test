@@ -18,6 +18,7 @@ public class boj20006 {
      * 시도
      * 1 ~ 3rd try => fail, limit 이 1인 경우 고려하지 않음
      * 4th try: limit이 1인 경우 고려하여 해결
+     * end 12:18
      */
     static int limit;
     public static class User implements Comparable<User>{
