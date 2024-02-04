@@ -1,4 +1,4 @@
-package boj.not_classified;
+package boj.Stack;
 
 import java.io.*;
 import java.util.*;
