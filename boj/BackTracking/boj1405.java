@@ -1,3 +1,4 @@
+package boj.BackTracking;
 import java.io.*;
 import java.util.*;
 public class boj1405 {
