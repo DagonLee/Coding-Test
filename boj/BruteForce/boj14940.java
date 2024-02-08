@@ -1,3 +1,5 @@
+package boj.BruteForce;
+
 
 import java.io.*;
 import java.util.*;
