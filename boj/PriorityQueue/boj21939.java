@@ -33,6 +33,8 @@ public class boj21939 {
      * 
      * 24:24 failed 5 times
      * => 다시 풀기로 확정
+     * 두번째 접근법으로 풀이 대신 문제별 난이도를 기록하는 맵을 사용하여 삭제 여부를 탐색한다.
+     * => success
      */
     public static class Problem implements Comparable<Problem>{
         int difficulty;
@@ -53,7 +55,6 @@ public class boj21939 {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         PriorityQueue <Problem> ascendingPQ = new PriorityQueue<>();
         PriorityQueue <Problem> descendingPQ = new PriorityQueue<>(Collections.reverseOrder());
-        PriorityQueue <Problem> pq = new PriorityQueue<>();
         Map <Integer, Integer> solvedMap = new HashMap<>();
         StringBuilder sb = new StringBuilder();
         int n = Integer.parseInt(br.readLine());
