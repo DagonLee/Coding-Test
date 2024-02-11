@@ -1,7 +1,6 @@
 package boj.SlidingWindow;
 
 import java.io.*;
-import java.util.*;
 
 public class boj1522 {
     /*
