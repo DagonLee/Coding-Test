@@ -35,7 +35,7 @@ public class boj2493 {
      * 만약 현재 탑 길이보다 큰 탑 길이가 있다면 결과 배열에 해당 탑의 길이를 저장하고 루프를 나온다.
      * 항상 현재 탑길이를 스택에 추가
      * 
-     * 
+     * 13:25 => success
      */
     public static void main(String[] args) throws Exception{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
