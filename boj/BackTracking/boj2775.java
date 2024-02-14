@@ -1,6 +1,5 @@
 package boj.BackTracking;
 import java.io.*;
-import java.util.StringTokenizer;
 public class boj2775 {
     /*
      * start: 240214 17:29
