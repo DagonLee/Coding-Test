@@ -28,8 +28,10 @@ public class boj5972 {
      * 검색을 통해서 해결
      * 문제점
      * bfs를 deque로 순회할 시 메모리 초과가 난다.
-     * 
+     * PriorityQueue 를 사용
      * 간선의 가중치가 있는 경우에는 노드 클래스를 선언하여 관리하는 것이 좋을 듯 하다.
+     * 다익
+     * 11:15 => success
      * 
      */
     public static void main(String[] args) throws Exception{
@@ -63,7 +65,7 @@ public class boj5972 {
             for(int[] next: adjList[now[0]]){
                 int dest = next[0];
                 int val = next[1];
-                if(dist[now[0]] + val < dist[dest]){
+                if(dist[now[0]] + val > dist[dest]){
                     dist[dest] = dist[now[0]] + val;
                     q.add(new int[]{dest, dist[dest]});
                 }
