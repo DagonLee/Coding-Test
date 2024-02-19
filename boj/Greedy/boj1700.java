@@ -74,12 +74,12 @@ public class boj1700 {
                         idx = i;
                     }
                 }
-                multi.remove(idx);
+                multi.set(idx, d);
                 cnt ++;
             }
-            
-            multi.add(d);
-
+            else{
+                multi.add(d);
+            }
             // System.out.print("등장: " + d + multi.toString()+" " + cnt);
             // System.out.println();
             appearList[d].pollFirst();
