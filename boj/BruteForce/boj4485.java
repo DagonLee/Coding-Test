@@ -65,7 +65,7 @@ public class boj4485 {
                     }
                 }
             }
-            sb.append("Problem "+Integer.toString(tc++) + ": " + Integer.toString(val[n - 1][n - 1]) +"\n");
+            sb.append(String.format("Problem %d: %d\n",tc++, val[n - 1][n - 1]));
 
         }
         System.out.println(sb.toString());
