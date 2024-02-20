@@ -25,7 +25,7 @@ public class boj1253 {
      * 투 포인터 
      * 접근방법을 생각하지 못하여 reference 참조
      * 이분 탐색으로 해결
-     * 
+     * 10:20
      */
     public static void main(String[] args) throws Exception{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
