@@ -1,4 +1,4 @@
-package boj.HashMap;
+package boj.Map;
 
 import java.io.*;
 import java.util.*;
