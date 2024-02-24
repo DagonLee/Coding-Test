@@ -23,7 +23,7 @@ public class boj2179 {
      * reference 참조
      * 일단 문자열을 모두 정렬
      * 처음 부터 차례로 최대 공통 문자열을 갱신
-     * 
+     * 단순 비교로 해결가능;; => 10:53
      */
     public static void main(String[] args) throws Exception{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
