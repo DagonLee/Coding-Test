@@ -14,6 +14,7 @@ public class boj1238 {
      * 2. 각 마을 과 x의 왕복 거리를 비교하여 최댓 값을 갱신
      * 
      * 다익스트라를 활용하여 최단 거리 맵을 구해놓고 비교
+     * 14:20 => success
      */
     public static class Node implements Comparable<Node>{
         int num;
