@@ -11,6 +11,9 @@ public class boj1167 {
      * 해결방법
      * 1. 1번에서 가장 먼 지점을 구한다.
      * 2. 1번 지점과 가장 먼 거리를 출력한다.
+     * 
+     * 다익스트라 사용
+     * 16:30
      */
     static class Vertex implements Comparable<Vertex>{
         int name;
