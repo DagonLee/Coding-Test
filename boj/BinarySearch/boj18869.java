@@ -2,7 +2,6 @@ package boj.BinarySearch;
 
 import java.io.*;
 import java.util.*;
-import java.util.stream.IntStream;
 public class boj18869 {
     /*
      * 문제
