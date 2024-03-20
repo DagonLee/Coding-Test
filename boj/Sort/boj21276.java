@@ -11,6 +11,7 @@ public class boj21276 {
      * 트리 형태의 족보를 구성하려고 할때, 각 가문의 시조들의 이름을 공백으로 구분하여 사전순 출력
      * 이름 사전 순으로 이름과 자식 수, 그리고 자식들의 이름을 공백으로 구분하여 출력
      * 부분문제 해결 10/19
+     * 해결 => 자식들을 정렬하는 과정을 생략해서 생긴 오류
      */
     public static void main(String[] args) throws Exception{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -72,6 +73,7 @@ public class boj21276 {
         for(String person : people){
             if(ans.containsKey(person)){
                 ArrayList<String> childs = ans.get(person);
+                Collections.sort(childs);
                 System.out.print(person + " ");
                 System.out.print(childs.size() + " ");
                 for(String child : childs){
