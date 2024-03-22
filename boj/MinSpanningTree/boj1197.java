@@ -65,7 +65,9 @@ public class boj1197 {
             ans += now.val;
             checked[now.dest] = true;
             for(Node nxt : adj[now.dest]){
-                pq.add(nxt);
+                if(!checked[nxt.dest]){
+                    pq.add(nxt);
+                }
             }
         }
         System.out.println(ans);
